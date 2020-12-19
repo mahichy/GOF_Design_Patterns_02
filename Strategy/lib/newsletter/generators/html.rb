@@ -1,6 +1,15 @@
+require "forwardable"
 module Newsletter 
 	module Generators
 		class Html
+			extend Forwardable
+
+			def_delegators :@context, :title, :phrase
+			
+			def initialize context
+				@context = context
+			end
+
 			def execute
 				<<EOF
 #{header}
@@ -9,13 +18,13 @@ module Newsletter
 EOF
 			end
 			def header
-				"<h1>Hello World!</h1>"
+				"<h1>#{title}</h1>"
 			end
 
 			def content
 		  		<<EOF
 <div class="content">
-	<p>lorem ipsum</p>
+	<p>#{phrase}</p>
 </div>
 EOF
 			end
