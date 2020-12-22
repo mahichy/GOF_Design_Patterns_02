@@ -17,7 +17,6 @@ module Application
 			@observers.each { |o| o.updated self }
 		end
 	end
-
 	class UserObserver
 		def updated user
 			puts user.username
