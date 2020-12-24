@@ -19,7 +19,6 @@ describe CarProductionLine do
 	end
 
 	it "can't jump to the wheels right after the engine" do
-		skip
 		-> { production_line.move_to! :wheels }.must_raise IllegalStateJumpError
 	end
 end
