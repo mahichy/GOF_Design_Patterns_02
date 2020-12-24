@@ -14,8 +14,8 @@ describe RentalPlan do
 
 	describe "each range item" do
 		it "has its own list of hour range items" do
-			skip
-			@plan.ranges.first.hour_ranges.first.finish.must_equal 24
+			@plan.ranges.first.
+			hour_ranges.first.finish.must_equal 24
 		end
 	end
 end

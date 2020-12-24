@@ -21,7 +21,7 @@ class RentalPlan
 	end
 
 	def self.build_list_of_ranges
-		@ranges = [DayRange.new]	
+		@ranges = [DayRange.build]	
 	end
 
 	def name
