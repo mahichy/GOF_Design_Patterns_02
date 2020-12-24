@@ -9,7 +9,6 @@ describe RentalPlan do
 	end
 
 	it "has a list of day range items" do
-		skip
 		@plan.ranges.first.start.must_equal 1
 	end
 
