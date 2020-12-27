@@ -10,4 +10,8 @@ class Employee
 	def department_name
 		chief.department.name
 	end
+
+	def department_count
+		chief.department.count
+	end
 end
