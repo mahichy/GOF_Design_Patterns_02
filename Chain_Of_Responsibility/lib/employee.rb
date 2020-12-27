@@ -1,5 +1,5 @@
 class Employee
-
+	attr_reader :chief
 	def initialize options = {}
 		@chief = options[:chief]
 	end
@@ -8,6 +8,6 @@ class Employee
 	end
 
 	def department_name
-		"Software Development"
+		chief.department.name
 	end
 end
