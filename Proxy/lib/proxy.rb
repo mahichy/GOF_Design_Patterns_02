@@ -1,0 +1,3 @@
+class VideoAuthenticationProxy
+
+end
